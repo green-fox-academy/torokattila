@@ -1,0 +1,100 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: coral;
+    
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: sienna;
+}
+
+input:hover {
+    background-color: chocolate;
+}
+
+div.mainTitle {
+    background-color: indianred;
+    padding: 5px;
+    color: firebrick;
+    text-align: left;
+}
+
+.aboutMe {
+    padding: 5%;
+}
+
+.firstMonth {
+    padding: 5%;
+}
+
+.secondMonth {
+    padding: 5%;
+}
+
+body {
+    margin:0;
+    color: brown;
+    text-align: center;
+}
+
+form {
+    margin: 20px;
+    text-decoration: none;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+.newPost {
+    border: none;
+}
+
+.post {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login {
+    margin: 30px;
+}
+
+.add {
+    margin: 20px;
+}
+
+.username {
+    background-color: brown;
+}
+
+.username:hover {
+    background-color: darkred;
+}
+
+.password:hover {
+    background-color: darkred;
+}
+
+.password {
+    background-color: brown;
+}
+
+a {
+    text-decoration: none;
+    margin: 20px;
+    text-align: right;
+    color: firebrick;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    color: maroon;
+}
+
+.navbar {
+    margin: 40px;
+}
