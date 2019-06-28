@@ -2,35 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e520e7-e1b2-4bb8-aedd-d690a64de424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CodingHours.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountFromTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DefineBasicInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DrawPyramid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DrawTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavoriteNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloMe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloOthers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumptyDumpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IWontCheatOnExams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IntroduceMyself.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MUltiplicationTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OneTwoALot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PartyIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SecondsInADay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Swap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VariableMutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-2/folder3/file3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day-2/folder3/file3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-2/folder4/file4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day-2/folder4/file4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-2/folder5/file5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../day-2/folder5/file5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/day-4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/DrawSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf />
@@ -82,11 +59,12 @@
         <option value="$PROJECT_DIR$/src/IWontCheatOnExams.java" />
         <option value="$PROJECT_DIR$/src/PrintEven.java" />
         <option value="$PROJECT_DIR$/src/MUltiplicationTable.java" />
-        <option value="$PROJECT_DIR$/src/CountFromTo.java" />
         <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
-        <option value="$PROJECT_DIR$/src/DrawPyramid.java" />
         <option value="$PROJECT_DIR$/src/DrawTriangle.java" />
         <option value="$PROJECT_DIR$/src/DrawDiamond.java" />
+        <option value="$PROJECT_DIR$/src/CountFromTo.java" />
+        <option value="$PROJECT_DIR$/src/DrawPyramid.java" />
+        <option value="$PROJECT_DIR$/src/DrawSquare.java" />
       </list>
     </option>
   </component>
@@ -120,8 +98,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DrawTriangle">
+  <component name="RunManager" selected="Application.DrawSquare">
     <configuration name="CountFromTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountFromTo" />
       <module name="Workshop" />
@@ -159,6 +137,13 @@
     </configuration>
     <configuration name="DrawPyramid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DrawPyramid" />
+      <module name="Workshop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DrawSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DrawSquare" />
       <module name="Workshop" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,27 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MUltiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MUltiplicationTable" />
-      <module name="Workshop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrintEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrintEven" />
-      <module name="Workshop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DrawSquare" />
         <item itemvalue="Application.DrawTriangle" />
         <item itemvalue="Application.DrawPyramid" />
         <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.CountFromTo" />
-        <item itemvalue="Application.MUltiplicationTable" />
       </list>
     </recent_temporary>
   </component>
@@ -213,44 +184,45 @@
       <option name="presentableId" value="Default" />
       <updated>1561625493722</updated>
       <workItem from="1561625498892" duration="23932000" />
+      <workItem from="1561709763565" duration="2987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23932000" />
+    <option name="totallyTimeSpent" value="26919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16641453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32850242" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3043478" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,13 +265,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrintValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintValues.java" />
     <entry file="file://$PROJECT_DIR$/src/TwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -412,13 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountFromTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -426,24 +385,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
+    <entry file="file://$PROJECT_DIR$/src/DrawDiamond.java" />
+    <entry file="file://$PROJECT_DIR$/src/CountFromTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DrawTriangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawDiamond.java">
+    <entry file="file://$PROJECT_DIR$/src/DrawSquare.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="340">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
