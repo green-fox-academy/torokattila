@@ -6,19 +6,19 @@ public class AverageOfInput {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Number One: ");
+        System.out.print("Number One: ");
         int num1 = sc.nextInt();
 
-        System.out.println("Number Two: ");
+        System.out.print("Number Two: ");
         int num2 = sc.nextInt();
 
-        System.out.println("Number Three: ");
+        System.out.print("Number Three: ");
         int num3 = sc.nextInt();
 
-        System.out.println("Number four: ");
+        System.out.print("Number four: ");
         int num4 = sc.nextInt();
 
-        System.out.println("Number five: ");
+        System.out.print("Number five: ");
         int num5 = sc.nextInt();
 
         int sum = num1 + num2 + num3 + num4 + num5;

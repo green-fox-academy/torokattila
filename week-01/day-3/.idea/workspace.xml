@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e520e7-e1b2-4bb8-aedd-d690a64de424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../day-4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-4/day-4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-4/src/DrawSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/ConditionalVariableMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/DrawDiagonal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/DrawDiamond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/GuessTheNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-4/src/ParametricAverage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/src/AverageOfInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/src/AverageOfInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/src/PrintBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/src/PrintBigger.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +24,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,8 +76,8 @@
         <option value="$PROJECT_DIR$/src/DrawTriangle.java" />
         <option value="$PROJECT_DIR$/src/DrawDiamond.java" />
         <option value="$PROJECT_DIR$/src/CountFromTo.java" />
-        <option value="$PROJECT_DIR$/src/DrawPyramid.java" />
         <option value="$PROJECT_DIR$/src/DrawSquare.java" />
+        <option value="$PROJECT_DIR$/src/DrawPyramid.java" />
       </list>
     </option>
   </component>
@@ -107,6 +120,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -127,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DrawSquare">
+  <component name="RunManager" selected="Application.DrawPyramid">
     <configuration name="CountFromTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountFromTo" />
       <module name="Workshop" />
@@ -165,9 +179,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DrawPyramid" />
         <item itemvalue="Application.DrawSquare" />
         <item itemvalue="Application.DrawTriangle" />
-        <item itemvalue="Application.DrawPyramid" />
         <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.CountFromTo" />
       </list>
@@ -185,16 +199,23 @@
       <updated>1561625493722</updated>
       <workItem from="1561625498892" duration="23932000" />
       <workItem from="1561709763565" duration="2987000" />
+      <workItem from="1561749924351" duration="1606000" />
+      <workItem from="1561755125369" duration="1121000" />
+      <workItem from="1561757065913" duration="10000" />
+      <workItem from="1561792798026" duration="155000" />
+      <workItem from="1561806008816" duration="1311000" />
+      <workItem from="1561814416936" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26919000" />
+    <option name="totallyTimeSpent" value="31707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16641453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18003026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -203,7 +224,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3043478" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29146537" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,13 +421,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawSquare.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawSquare.java" />
     <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="353">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
