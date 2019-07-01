@@ -1,11 +1,10 @@
 public class AppendA {
 
     public static void main(String[] args) {
-        String typo = "Chinchill";
-        System.out.println(appendAFunc(typo));
-    }
+        String[] animals = {"koal", "pand", "zebr"};
 
-    public static String appendAFunc(String input) {
-        return input + 'a';
+        for(String plus : animals) {
+            System.out.println(plus + 'a');
+        }
     }
 }
