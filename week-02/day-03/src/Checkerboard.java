@@ -4,20 +4,29 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class PurpleSteps3d {
+public class Checkerboard {
     public static void mainDraw(Graphics graphics) {
 
-        graphics.setColor(new Color(180, 69, 243));
-        int sum = 0;
-        for (int i = 0; i < 6; i++) {
-            sum += i * 10;
-            drawing(graphics, 10 + sum, 10 + i * 10);
+        int row;
+        int col;
+        int x;
+        int y;
+
+        for (row = 0; row < WIDTH; row++) {
+            for (col = 0; col < HEIGHT; col++) {
+                x = col * 22;
+                y = row * 22;
+
+                if ((row % 2) == (col % 2)) {
+                    graphics.setColor(Color.white);
+                } else {
+                    graphics.setColor(Color.black);
+                }
+                graphics.fillRect(x, y, 22, 22);
+            }
         }
 
-    }
 
-    public static void drawing(Graphics square, int a, int b) {
-        square.fillRect(a, a, b, b);
     }
 
     static int WIDTH = 320;
