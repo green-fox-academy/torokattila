@@ -4,28 +4,16 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Checkerboard {
+public class LinePlay {
     public static void mainDraw(Graphics graphics) {
 
-        int row;
-        int col;
-        int x;
-        int y;
 
-        for (row = 0; row < WIDTH; row++) {
-            for (col = 0; col < HEIGHT; col++) {
-                x = col * 40;
-                y = row * 40;
-
-                if ((row % 2) == (col % 2)) {
-                    graphics.setColor(Color.white);
-                } else {
-                    graphics.setColor(Color.black);
-                }
-                graphics.fillRect(x, y, 40, 40);
-            }
+        for(int i = 1; i  < 16; i++) {
+            graphics.setColor(Color.green);
+            graphics.drawLine(0, 20 * i, 20 * i, 320);
+            graphics.setColor(Color.magenta);
+            graphics.drawLine(20 * i, 0, 320, 20 * i);
         }
-
 
     }
 

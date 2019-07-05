@@ -1,33 +1,31 @@
 import javax.swing.*;
-
 import java.awt.*;
 
-import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class Checkerboard {
+public class EnvelopeStar {
+
+    static int lines = 16;
+    static int dist = 160 / lines;
+
     public static void mainDraw(Graphics graphics) {
 
-        int row;
-        int col;
-        int x;
-        int y;
-
-        for (row = 0; row < WIDTH; row++) {
-            for (col = 0; col < HEIGHT; col++) {
-                x = col * 40;
-                y = row * 40;
-
-                if ((row % 2) == (col % 2)) {
-                    graphics.setColor(Color.white);
-                } else {
-                    graphics.setColor(Color.black);
-                }
-                graphics.fillRect(x, y, 40, 40);
+        for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < 2; j++) {
+                drawStar(graphics, j * 320, i * 320);
             }
         }
 
-
     }
+
+
+    public static void drawStar(Graphics graphics, int x, int y) {
+        for(int i = 1; i <= lines; i++) {
+            graphics.setColor(Color.GREEN);
+            graphics.drawLine(Math.abs(x -(dist * i)), 160, 160, Math.abs(y - 160 -(dist * i)));
+        }
+    }
+
 
     static int WIDTH = 320;
     static int HEIGHT = 320;
