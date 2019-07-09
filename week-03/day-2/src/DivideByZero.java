@@ -6,9 +6,9 @@ public class DivideByZero {
 
         System.out.println("Give me a number: ");
         Scanner sc = new Scanner(System.in);
-        int divisor = sc.nextInt();
+        int divide = sc.nextInt();
 
-        divider(divisor);
+        divider(divide);
 
     }
 
@@ -18,7 +18,7 @@ public class DivideByZero {
             int result = 10 / a;
             System.out.println(result);
         } catch (ArithmeticException ex) {
-            System.err.println("Fail");
+            System.err.println("Fail!");
         }
     }
 }
