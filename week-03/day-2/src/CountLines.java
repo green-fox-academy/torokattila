@@ -8,7 +8,7 @@ public class CountLines {
 
     public static void main(String[] args) {
 
-        System.out.println(countLines("C:/Users/atti_/Documents/Files.txt"));
+        System.out.println(countLines("C:/Users/atti_/Desktop/ArrayList.txt"));
 
     }
 
