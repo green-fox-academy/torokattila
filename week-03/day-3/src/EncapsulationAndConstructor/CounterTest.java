@@ -1,4 +1,4 @@
-package EncapsulationAndContructor;
+package EncapsulationAndConstructor;
 
 import org.junit.jupiter.api.Test;
 

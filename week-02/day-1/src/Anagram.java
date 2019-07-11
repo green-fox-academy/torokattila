@@ -4,7 +4,7 @@ public class Anagram {
 
     public static void main(String[] args) {
 
-        System.out.println(anagram("peace", "god"));
+        System.out.println(anagram("dog", "god"));
 
     }
 
