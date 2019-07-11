@@ -2,9 +2,9 @@ package EncapsulationAndConstructor;
 
 public class Sharpie {
 
+    public float inkAmount;
     String color;
-    double width;
-    double inkAmount = 100;
+    float width;
 
     public void use() {
         inkAmount--;

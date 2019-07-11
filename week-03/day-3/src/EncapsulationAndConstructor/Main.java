@@ -18,7 +18,7 @@ public class Main {
         //Sharpie
         Sharpie sharpie = new Sharpie();
         sharpie.color = "red";
-        sharpie.width = 12.3;
+        sharpie.width = 12.3f;
         sharpie.use();
         System.out.println(sharpie.inkAmount);
 
