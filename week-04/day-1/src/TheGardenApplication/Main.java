@@ -14,6 +14,13 @@ public class Main {
         Tree tree2 = new Tree("orange", 0);
         garden.add(tree2);
 
+        garden.info();
+        System.out.println("");
+        garden.watering(40);
+        garden.info();
+        System.out.println("");
+        garden.watering(70);
+        garden.info();
 
     }
 

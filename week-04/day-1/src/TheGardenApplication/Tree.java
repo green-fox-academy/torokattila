@@ -18,4 +18,9 @@ public class Tree extends Plant{
         this.water += water * 0.4;
     }
 
+    @Override
+    public String toString() {
+        return color + " Tree";
+    }
+
 }

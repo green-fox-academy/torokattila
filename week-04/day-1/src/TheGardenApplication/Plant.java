@@ -9,6 +9,7 @@ public class Plant {
         this.water = 0;
     }
 
+
     public boolean needsWater() {
         return true;
     }

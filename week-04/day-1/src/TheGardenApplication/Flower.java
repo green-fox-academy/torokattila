@@ -17,5 +17,8 @@ public class Flower extends Plant {
         this.water += water * 0.75;
     }
 
-
+    @Override
+    public String toString() {
+        return color + " Flower";
+    }
 }
