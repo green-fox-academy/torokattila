@@ -1,4 +1,4 @@
-package GreenFoxOrganization;
+package Cloneable;
 
 public class Person {
 
