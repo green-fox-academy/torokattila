@@ -1,4 +1,5 @@
 package Extension;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -37,15 +38,19 @@ public class Extension {
 
     String translate(String hungarian) {
         String teve = hungarian;
-        int length = teve.length();
-        for (int i = 0; i < length; i++) {
-            char c = teve.charAt(i);
-            if (isVowel(c)) {
-                teve = String.join(c + "v" + c, teve.split(""+c));
-                i+=2;
-                length+=2;
+        String[] r = teve.split("(?<=[aeiou])");
+        ArrayList<String> words = new ArrayList<>();
+        for (int i = 0; i < r.length; i++) {
+            if(isVowel(r[i].charAt(r[i].length()-1))) {
+                words.add(r[i] + "v" + r[i].charAt(r[i].length() - 1));
+            }else{
+                words.add(r[i]);
             }
         }
-        return teve;
+        String listString = "";
+        for (String s : words) {
+            listString += s;
+        }
+        return listString;
     }
 }

@@ -56,6 +56,11 @@ class ExtensionTest {
     }
 
     @Test
+    void testIsVowel_b() {
+        assertFalse(extension.isVowel('b'));
+    }
+
+    @Test
     void testIsVowel_capitalA() {
         assertTrue(extension.isVowel('A'));
     }
@@ -73,5 +78,10 @@ class ExtensionTest {
     @Test
     void testTranslate_lagopus() {
         assertEquals("lavagovopuvus", extension.translate("lagopus"));
+    }
+
+    @Test
+    void testTranslate_teke() {
+        assertEquals("tevekeve", extension.translate("teke"));
     }
 }
