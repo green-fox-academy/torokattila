@@ -27,5 +27,5 @@ class FibonacciTest {
     void fibonacciIndexNine() {
         assertEquals(34, fibo.fibonacci(9));
     }
-    
+
 }
