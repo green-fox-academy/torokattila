@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(235, 235, 235);
+    font-family: "Roboto", Helvetica, arial, sans-serif;
+}
+
+.loginbox {
+    width: 420px;
+    height: 420px;
+    background: wheat;
+    color: coral;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 60px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    background-color: floralwhite;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: chocolate;
+    font-size: 18px;
+    border-radius: 40px;
+    color: wheat;
+}
+
+.loginbox input[type="submit"]:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+.loginbox a {
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.loginbox a:hover {
+    color: coral;
+}
