@@ -40,10 +40,10 @@ div.table-title {
 }
 
 th {
-    color : rgb(160, 167, 175);
+    color: rgb(160, 167, 175);
     background-color: rgb(27, 30, 36);
     border-bottom: 4px solid rgb(158, 167, 175);
-    border-right: 1px solid  #343a45;
+    border-right: 1px solid #343a45;
     font-size: 23px;
     font-weight: 100;
     padding: 24px;

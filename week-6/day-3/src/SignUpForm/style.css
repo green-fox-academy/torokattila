@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-size: 16px;
+    color: #777;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    border-bottom: 3px solid rgb(22, 160, 133);
+}
+
+input[type="submit"] {
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: rgb(22, 160, 133);
+    border: none;
+    border-radius: 2px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(18, 129, 106);
+}
+
+.right-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+
+}
+
+.or {
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: rgb(221, 221, 221);
+    font-family: sans-serif;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+}
+
+.right-box .signinwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+button.social-facebook {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(50, 80, 142);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button.social-facebook:hover {
+    background-color: rgb(82, 118, 194);
+    cursor: pointer;
+}
+
+button.social-twitter {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(85, 172, 238);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button.social-twitter:hover {
+    background-color: rgb(20, 124, 201);
+    cursor: pointer;
+}
+
+button.social-google\+ {
+    background-color: rgb(221, 75, 57);
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button.social-google\+:hover {
+    background-color: rgb(232, 129, 117);
+    cursor: pointer;
+}

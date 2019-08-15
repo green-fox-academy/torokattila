@@ -66,6 +66,10 @@ h4 {
     cursor: pointer;
 }
 
+.loginbox input:focus {
+    background-color: khaki;
+}
+
 .loginbox a {
     text-decoration: none;
     color: black;
