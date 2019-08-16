@@ -1,0 +1,145 @@
+content {
+    margin: 20px 10%;
+    height: 500px;
+    padding: 0 10%;
+    font-family: SansSerif;
+}
+
+h1 {
+    width: 100%;
+    font-size: 48px;
+    color: rgb(1, 188, 212);
+}
+
+.my-shop-button {
+    border-bottom: 2px solid rgb(1, 188, 212);
+    margin: 32px 0 0;
+    display: inline;
+}
+
+.header {
+    margin: 0;
+    border-bottom: 2px solid rgb(1, 188, 212);
+}
+
+.more {
+    float: right;
+}
+
+.more-button {
+    margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a.button {
+    padding: 8px;
+    background-color: rgb(244, 67, 54);
+    color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+}
+
+a.button:hover {
+    background-color: rgb(218, 28, 12);
+}
+
+.links {
+    justify-content: space-between;
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+p {
+    color: rgb(255, 161, 165);
+    margin: 0;
+}
+
+input[type=text] {
+    width: 86%;
+    font-size: 18px;
+    border: 2px solid rgb(245, 89, 78);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+input[type=text]:focus {
+    border: 2px solid rgb(218, 28, 12);
+}
+
+input[type=text].filter-bar {
+    width: 70%;
+}
+
+.searchbar {
+    text-align: center;
+}
+
+input[type=submit] {
+    padding: 9px;
+    color: whitesmoke;
+    background: rgb(244, 67, 54);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background: rgb(218, 28, 12);
+    cursor: pointer;
+}
+
+#subtitle {
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+#price-subtitle {
+    margin: 16px 0 0 27%;
+}
+
+table {
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+td {
+    font-size: 18px;
+}
+
+td.first-column {
+    font-size: 20px;
+}
+
+td.text, td.texttwo {
+    text-align: left;
+}
+
+td.texttwo {
+    font-size: 14px;
+}
+
+th {
+    background-color: #69effe;
+}
+
+th, td {
+    padding: 10px 5px;
+}

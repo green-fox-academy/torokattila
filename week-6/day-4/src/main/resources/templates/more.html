@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+    <head>
+        <title>My Shop</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body>
+        <div class="content">
+            <header class="top">
+                <div class="header">
+                    <a href="/webshop"><h1 class="my-shop-button">My Shop</h1></a>
+                    <div class="more">
+                        <a href="/more-filters"><h1 class="more-button">More</h1></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="/filter-by-type?filter=Clothes+and+Shoes" class="button">Clothes and Shoes</a>
+                    <a href="/filter-by-type?filter=Electronics" class="button">Electronics</a>
+                    <a href="/filter-by-type?filter=Beverages+and+Snacks" class="button">Beverages and Snacks</a>
+                    <a href="/price-in-euro" class="button">Euro</a>
+                    <a href="/price-in-original" class="end-button">Original currency</a>
+                </div>
+            </header>
+
+            <div id="price-subtitle">
+                <p>Filter by price:</p>
+            </div>
+
+            <form class="searchbar" method="POST" action="/filter-by-price">
+                <input class="filter-button" type="submit" name="pricefilter" value="Above">
+                <input class="filter-button" type="submit" name="pricefilter" value="Below">
+                <input class="filter-button" type="submit" name="pricefilter" value="Exactly">
+                <input class="filter-bar" type="text" name="searchprice" placeholder="...e.g.: 300">
+            </form>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity of stock</th>
+                </tr>
+                <tr th:each="item : ${list}">
+                    <td th:text="${item.getName()}" class="text-first-column"></td>
+                    <td th:text="${item.getType()}" class="text"></td>
+                    <td th:text="${item.getDescription}" class="texttwo"></td>
+                    <td th:text="${#numbers.formatDecimal(item.getPrice(),1,2)} + ' ' + (${currency != null} ? ${currency} : 'Kc')"></td>
+                    <td th:text="${item.getQuantityOfStock()}"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

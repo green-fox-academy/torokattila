@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <base href="/" target="_blank">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="/style.css"/>
+        <title>My Shop</title>
+    </head>
+    <body>
+        <div class="content">
+            <header class="top">
+                <div class="header">
+                    <a href="/webshop"><h1 class="my-shop-button">My Shop</h1></a>
+                        <div class="more">
+                            <a href="/more-filters"><h1 class="more-button">More</h1></a>
+                        </div>
+                </div>
+                <div class="links">
+                    <a href="/only-available" class="start button">ONLY AVAILABLE</a>
+                    <a href="cheaper-first" class="button">CHEAPER FIRST</a>
+                    <a href="contains-nike" class="button">CONTAINS NIKE</a>
+                    <a href="average-stock" class="button">AVERAGE STOCK</a>
+                    <a href="most-expensive-available" class="button">MOST EXPENSIVE AVAILABLE</a>
+                </div>
+            </header>
+            <form class="searchbar" method="POST" action="http://localhost:8080/search">
+                <div id="subtitle">
+                    <p>Search for:</p>
+                </div>
+                <input type="text" name="searchtext" id="searchtext" placeholder="...something like nike">
+                <input type="submit" name="searchbutton" id="searchbutton" value="Search">
+            </form>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity of stock</th>
+                </tr>
+                <tr th:each="item : ${list}">
+                    <td th:text="${item.getName()}" class="text first-column"></td>
+                    <td th:text="${item.getType()}" class="text"></td>
+                    <td th:text="${item.getDescription()}" class="texttwo"></td>
+                    <td th:text="${item.getPrice()} + ' ' + 'Kč'"></td>
+                    <td th:text="${item.getQuantityOfStock()}"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -17,7 +17,7 @@ public class HelloWebController {
             "Sa-wat-dee", "Merhaba", "Selam", "Vitayu", "Xin chào", "Hylo", "Sut Mae", "Sholem Aleychem", "Sawubona"};
 
     @RequestMapping("web/greeting")
-    public String greeting(@RequestParam(value="name") String name, Model model) {
+    public String greeting(@RequestParam(value = "name") String name, Model model) {
         model.addAttribute("name", name);
         model.addAttribute("greetingCounter", atomicLong.getAndIncrement());
         return "greeting";
