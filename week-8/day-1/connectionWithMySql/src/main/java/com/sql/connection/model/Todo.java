@@ -11,8 +11,8 @@ public class Todo {
   @GeneratedValue
   private long id;
   private String title;
-  private boolean urgent = false;
-  private boolean done = false;
+  private boolean urgent;
+  private boolean done;
 
   public Todo() {}
 
@@ -26,6 +26,22 @@ public class Todo {
     this.title = title;
   }
 
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+  public void setUrgent(boolean urgent) {
+    this.urgent = urgent;
+  }
+
+  public void setDone(boolean done) {
+    this.done = done;
+  }
+
   public long getId() {
     return id;
   }
@@ -34,23 +50,12 @@ public class Todo {
     return title;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
-  }
-
   public boolean isUrgent() {
     return urgent;
-  }
-
-  public void setUrgent(boolean urgent) {
-    this.urgent = urgent;
   }
 
   public boolean isDone() {
     return done;
   }
 
-  public void setDone(boolean done) {
-    this.done = done;
-  }
 }

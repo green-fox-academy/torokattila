@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -59,4 +56,19 @@ public class TodoController {
     todoRepository.deleteById(id);
     return "redirect:/todo/list";
   }
+
+  @RequestMapping(value = "/{id}/edit", method = RequestMethod.GET)
+  public String edit(@PathVariable("id") long id, Model model) {
+    model.addAttribute("todo", todoRepository.findById(id).get());
+    model.addAttribute("id", id);
+    return "editTodo";
+  }
+
+  @PostMapping(value = "/{id}/edit")
+  public String updateTodo(@ModelAttribute("todo") Todo todo, @PathVariable(name = "id") long id) {
+    todo.setId(id);
+    todoRepository.save(todo);
+    return "redirect:/todo/list";
+  }
+
 }
