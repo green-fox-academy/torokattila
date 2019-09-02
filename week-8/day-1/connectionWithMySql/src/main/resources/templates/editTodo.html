@@ -6,13 +6,13 @@
     </head>
     <body>
         <h1>Edit Todo:</h1>
-        <form method="post" th:action="'http://localhost:8080/todo/' + ${id} + '/edit'" name="todo">
+        <form method="post" th:action="'http://localhost:8080/todo/' + ${id} + '/edit'" th:object="${todo}">
             <label for="editable-todo">Todo Description:</label>
-            <input type="text" id="editable-todo" placeholder="Write your editable todo..." name="title" th:value="${todo.title}"><br>
+            <input type="text" id="editable-todo" placeholder="Write your editable todo..." name="title" th:field="*{title}"><br>
             <label for="urgent-checkbox">Urgent:</label>
-            <input type="checkbox" id="urgent-checkbox" name="urgent"><br>
+            <input type="checkbox" id="urgent-checkbox" name="urgent" th:field="*{urgent}"><br>
             <label for="done-checkbox">Done:</label>
-            <input type="checkbox" id="done-checkbox" name="done"><br>
+            <input type="checkbox" id="done-checkbox" name="done" th:field="*{done}"><br>
             <input type="submit" value="Submit">
             <a href="http://localhost:8080/todo/list">Cancel</a>
         </form>

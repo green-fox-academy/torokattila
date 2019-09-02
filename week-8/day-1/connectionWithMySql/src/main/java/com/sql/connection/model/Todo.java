@@ -13,6 +13,15 @@ public class Todo {
   private String title;
   private boolean urgent;
   private boolean done;
+  private String assignee;
+
+  public String getAssignee() {
+    return assignee;
+  }
+
+  public void setAssignee(String assignee) {
+    this.assignee = assignee;
+  }
 
   public Todo() {}
 

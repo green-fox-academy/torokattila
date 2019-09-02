@@ -3,10 +3,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Todo</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>Todos for today:</h1>
-        <a href="http://localhost:8080/todo/add">Add new post>></a>
+        <h1>Todo for today:</h1>
+        <form method="post" action="http://localhost:8080/todo/list">
+            <div class="searchDiv">
+                <p>Search todo:</p>
+            </div>
+            <input type="text" name="searchText" placeholder="Search a todo...">
+            <input type="submit" value="Search">
+        </form>
+        <a href="http://localhost:8080/todo/add">Add new post>></a><br>
+        <a href="http://localhost:8080/todo/assignee">List of Assignees</a>
         <table>
         <tr>
             <th>ID</th>
