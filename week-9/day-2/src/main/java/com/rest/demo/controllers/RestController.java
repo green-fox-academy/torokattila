@@ -1,10 +1,13 @@
 package com.rest.demo.controllers;
 
+import com.rest.demo.models.AppendA;
 import com.rest.demo.models.Doubling;
 import com.rest.demo.models.Error;
 import com.rest.demo.models.Greeter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
@@ -37,4 +40,15 @@ public class RestController {
       return ResponseEntity.status(200).body(error);
     }
   }
+
+  @GetMapping("/appenda/{appendable}")
+  public ResponseEntity appenda(@PathVariable(name = "appendable") String appendable) {
+    if (appendable != null) {
+      AppendA appendA = new AppendA(appendable);
+      return ResponseEntity.status(200).body(appendA);
+    } else {
+      return ResponseEntity.status(404).build();
+    }
+  }
+
 }
