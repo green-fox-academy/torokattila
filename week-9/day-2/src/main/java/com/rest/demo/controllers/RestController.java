@@ -62,7 +62,28 @@ public class RestController {
       Error error = new Error("Please provide a number!");
       return ResponseEntity.status(200).body(error);
     }
+  }
 
+  @PostMapping("/arrays")
+  public ResponseEntity operationsWithArray(@RequestBody Arrays arrays) {
+    if (arrays != null) {
+      Arrays arrays1 = new Arrays();
+      if (arrays1.getWhat().equals("sum")) {
+        Operations operations = new Operations();
+        operations.sum(arrays.getNumbers());
+        return ResponseEntity.status(200).body(arrays1);
+      } else if (arrays1.getWhat().equals("multiply")) {
+        Operations operations = new Operations();
+        operations.multiply(arrays.getNumbers());
+        return ResponseEntity.status(200).body(arrays1);
+      } else if (arrays1.getWhat().equals("double")) {
+        ArrayResult arrayResult = new ArrayResult();
+        arrayResult.doubling(arrays.getNumbers());
+        return ResponseEntity.status(200).body(arrays1);
+      }
+    }
+    Error error = new Error("Please provide what to do with the numbers!");
+    return ResponseEntity.status(200).body(error);
   }
 
 }
