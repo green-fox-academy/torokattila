@@ -1,14 +1,9 @@
 package com.rest.demo.controllers;
 
-import com.rest.demo.models.AppendA;
-import com.rest.demo.models.Doubling;
+import com.rest.demo.models.*;
 import com.rest.demo.models.Error;
-import com.rest.demo.models.Greeter;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 
 @org.springframework.web.bind.annotation.RestController
@@ -49,6 +44,25 @@ public class RestController {
     } else {
       return ResponseEntity.status(404).build();
     }
+  }
+
+  @PostMapping("/dountil/{action}")
+  public ResponseEntity doUntil(@PathVariable(name = "action") String action, @RequestBody Until until) {
+    if (until != null) {
+      DoUntil doUntil = new DoUntil();
+      if (action.equals("sum")) {
+        doUntil.sum(until.getUntil());
+        return ResponseEntity.status(200).body(doUntil);
+      } else if (action.equals("factor")) {
+        doUntil.factor(until.getUntil());
+        return ResponseEntity.status(200).body(doUntil);
+      }
+      return ResponseEntity.status(404).build();
+    } else {
+      Error error = new Error("Please provide a number!");
+      return ResponseEntity.status(200).body(error);
+    }
+
   }
 
 }
