@@ -1,13 +1,13 @@
 package com.rest.demo.models;
 
-public class DoublingError {
+public class Error {
 
   private String error;
 
-  public DoublingError() {
+  public Error() {
   }
 
-  public DoublingError(String error) {
+  public Error(String error) {
     this.error = error;
   }
 
