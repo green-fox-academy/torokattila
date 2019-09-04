@@ -66,20 +66,18 @@ public class RestController {
 
   @PostMapping("/arrays")
   public ResponseEntity operationsWithArray(@RequestBody Arrays arrays) {
+    Operations operations = new Operations();
     if (arrays != null) {
-      Arrays arrays1 = new Arrays();
-      if (arrays1.getWhat().equals("sum")) {
-        Operations operations = new Operations();
+      if (arrays.getWhat().equals("sum")) {
         operations.sum(arrays.getNumbers());
-        return ResponseEntity.status(200).body(arrays1);
-      } else if (arrays1.getWhat().equals("multiply")) {
-        Operations operations = new Operations();
+        return ResponseEntity.status(200).body(operations);
+      } else if (arrays.getWhat().equals("multiply")) {
         operations.multiply(arrays.getNumbers());
-        return ResponseEntity.status(200).body(arrays1);
-      } else if (arrays1.getWhat().equals("double")) {
+        return ResponseEntity.status(200).body(operations);
+      } else if (arrays.getWhat().equals("double")) {
         ArrayResult arrayResult = new ArrayResult();
         arrayResult.doubling(arrays.getNumbers());
-        return ResponseEntity.status(200).body(arrays1);
+        return ResponseEntity.status(200).body(arrayResult);
       }
     }
     Error error = new Error("Please provide what to do with the numbers!");

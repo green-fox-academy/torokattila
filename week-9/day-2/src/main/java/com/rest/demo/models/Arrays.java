@@ -9,6 +9,11 @@ public class Arrays {
     numbers = new int[4];
   }
 
+  public Arrays(String what) {
+    numbers = new int[4];
+    this.what = what;
+  }
+
   public String getWhat() {
     return what;
   }
