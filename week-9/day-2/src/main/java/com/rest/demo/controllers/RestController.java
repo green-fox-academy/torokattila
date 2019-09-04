@@ -1,7 +1,9 @@
 package com.rest.demo.controllers;
 
+import com.rest.demo.controllers.repositories.LogRepository;
 import com.rest.demo.models.*;
 import com.rest.demo.models.Error;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,8 +11,16 @@ import org.springframework.web.bind.annotation.*;
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
+  private LogRepository logRepository;
+
+  @Autowired
+  public RestController(LogRepository logRepository) {
+    this.logRepository = logRepository;
+  }
+
   @GetMapping("/doubling")
   public ResponseEntity doubling(@RequestParam(value = "input", required = false) Integer doublingResult) {
+    logRepository.save(new Log("/doubling", "input=" + doublingResult));
     if (doublingResult != null) {
       Doubling doubling = new Doubling(doublingResult);
       return ResponseEntity.status(200).body(doubling);
@@ -21,6 +31,7 @@ public class RestController {
 
   @GetMapping("/greeter")
   public ResponseEntity greeter(@RequestParam(value = "name", required = false) String name, @RequestParam(value = "title", required = false) String title) {
+    logRepository.save(new Log("/greeter", "name=" + name + "&" + "title=" + title));
     if (name != null && title != null) {
       Greeter greeter = new Greeter("Oh, hi there " + name + ", my dear " + title + '!');
       return ResponseEntity.status(200).body(greeter);
@@ -38,6 +49,7 @@ public class RestController {
 
   @GetMapping("/appenda/{appendable}")
   public ResponseEntity appenda(@PathVariable(name = "appendable") String appendable) {
+    logRepository.save(new Log("/appenda/" + appendable));
     if (appendable != null) {
       AppendA appendA = new AppendA(appendable);
       return ResponseEntity.status(200).body(appendA);
@@ -48,8 +60,9 @@ public class RestController {
 
   @PostMapping("/dountil/{action}")
   public ResponseEntity doUntil(@PathVariable(name = "action") String action, @RequestBody Until until) {
+    logRepository.save(new Log("/dountil/" + action, until.toString()));
+    DoUntil doUntil = new DoUntil();
     if (until != null) {
-      DoUntil doUntil = new DoUntil();
       if (action.equals("sum")) {
         doUntil.sum(until.getUntil());
         return ResponseEntity.status(200).body(doUntil);
@@ -67,6 +80,7 @@ public class RestController {
   @PostMapping("/arrays")
   public ResponseEntity operationsWithArray(@RequestBody Arrays arrays) {
     Operations operations = new Operations();
+    logRepository.save(new Log("/arrays" + arrays));
     if (arrays != null) {
       if (arrays.getWhat().equals("sum")) {
         operations.sum(arrays.getNumbers());
@@ -84,4 +98,9 @@ public class RestController {
     return ResponseEntity.status(200).body(error);
   }
 
+  @GetMapping("/log")
+  public ResponseEntity log() {
+    LogList logList = new LogList(logRepository.findAll());
+    return ResponseEntity.status(200).body(logList);
+  }
 }
