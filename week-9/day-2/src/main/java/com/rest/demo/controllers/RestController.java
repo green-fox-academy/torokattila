@@ -25,7 +25,8 @@ public class RestController {
       Doubling doubling = new Doubling(doublingResult);
       return ResponseEntity.status(200).body(doubling);
     } else {
-      return ResponseEntity.status(200).body("Please provide an input!");
+      Error error = new Error("Please provide an input!");
+      return ResponseEntity.status(200).body(error);
     }
   }
 
